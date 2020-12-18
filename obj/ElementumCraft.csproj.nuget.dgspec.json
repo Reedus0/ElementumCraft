@@ -1,0 +1,51 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Users\\Reedus\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\ElementumCraft\\ElementumCraft.csproj": {}
+  },
+  "projects": {
+    "D:\\Users\\Reedus\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\ElementumCraft\\ElementumCraft.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Users\\Reedus\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\ElementumCraft\\ElementumCraft.csproj",
+        "projectName": "ElementumCraft",
+        "projectPath": "D:\\Users\\Reedus\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\ElementumCraft\\ElementumCraft.csproj",
+        "packagesPath": "D:\\Users\\Reedus\\.nuget\\packages\\",
+        "outputPath": "D:\\Users\\Reedus\\Documents\\My Games\\Terraria\\ModLoader\\Mod Sources\\ElementumCraft\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Users\\Reedus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45"
+        ],
+        "sources": {
+          "D:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net45": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net45": {
+          "dependencies": {
+            "tModLoader.CodeAssist": {
+              "target": "Package",
+              "version": "[0.1.*, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "D:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

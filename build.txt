@@ -1,0 +1,3 @@
+displayName = ElementumCraft
+author = Reedus
+version = 0.2
