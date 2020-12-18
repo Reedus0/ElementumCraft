@@ -4,6 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.GameInput;
@@ -31,19 +34,14 @@ namespace ElementumCraft
 				}
 			}
 		}
-		public override void OnHitNPCWithProj(Projectile proj, NPC target, int damage, float knockback, bool crit)
-		{
-			if (proj.melee) { 
-				if (endurance >= 5)
-				{
-					endurance = endurance - 5f;
-				}
-			}
-		}
 		public override void FrameEffects()
         {
+			EnduranceRecovery();
+		}
+		public void EnduranceRecovery()
+        {
 			if (endurance < totalEndurance)
-            {
+			{
 				endurance = endurance + 0.3f;
 			}
 			if (endurance < 25)
@@ -51,13 +49,13 @@ namespace ElementumCraft
 				player.AddBuff(mod.BuffType("Fatigue"), 60);
 			}
 			if ((int)endurance == (int)totalEndurance)
-            {
+			{
 				EnduranceBar.visible = false;
-            }
-            else
-            {
+			}
+			else
+			{
 				EnduranceBar.visible = true;
 			}
-		}
-	}
+        }
+    }
 }
